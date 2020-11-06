@@ -20,3 +20,9 @@ Route::get('/', function () {
 Route::get('/imoveis', 'App\Http\Controllers\PropertyController@index');
 
 Route::get('/imoveis/novo', 'App\Http\Controllers\PropertyController@create');
+
+Route::post('/imoveis/cadastrar', 'App\Http\Controllers\PropertyController@store');
+Route::get('/imoveis/cadastrar', 'App\Http\Controllers\PropertyController@store');
+
+Route::get('/imoveis/{name}', 'App\Http\Controllers\PropertyController@show');
+Route::get('/imoveis/cadastrar', 'App\Http\Controllers\PropertyController@store');
