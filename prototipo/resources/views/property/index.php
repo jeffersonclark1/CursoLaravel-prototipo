@@ -23,7 +23,7 @@ if(!empty($properties)){
                 <td>{$property->title}</td>
                 <td>R$ " . number_format($property->rental_price, 2 , ',','.') . "</td>
                 <td>R$ " . number_format($property->sale_price, 2 , ',','.') . "</td>
-                <td><a href='{$linkReadMode}'>Ver mais</a> <a href='{$linkEditItem}'>Editar</a> <a href='{$linkRemoveItem}'>Remover</a> </td>
+                <td><a href='{$linkReadMode}'>Ver mais</a> | <a href='{$linkEditItem}'>Editar</a> | <a href='{$linkRemoveItem}'>Remover</a> </td>
               </tr>";
     }
     echo "</table>";

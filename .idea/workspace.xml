@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cf3ac11-6a9f-4044-aad0-8694be08c16e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/prototipo/resources/views/property/show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prototipo/resources/views/property/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototipo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prototipo/app/Http/Controllers/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/app/Http/Controllers/PropertyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototipo/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototipo/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototipo/resources/views/property/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/resources/views/property/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prototipo/resources/views/property/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/resources/views/property/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prototipo/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/routes/web.php" afterDir="false" />
     </list>
@@ -166,9 +165,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/prototipo/resources/views/property" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/prototipo/resources/views/property" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -180,7 +185,8 @@
       <updated>1604606180288</updated>
       <workItem from="1604606183141" duration="24000" />
       <workItem from="1604606222464" duration="2927000" />
-      <workItem from="1604664717186" duration="3883000" />
+      <workItem from="1604664717186" duration="7246000" />
+      <workItem from="1604685440280" duration="306000" />
     </task>
     <servers />
   </component>
@@ -197,6 +203,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="769" y="432" width="444" height="249" key="#Composer" timestamp="1604606345161">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Property;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -10,7 +11,7 @@ class PropertyController extends Controller
     public function index()
     {
 
-        $properties = DB::select("SELECT * FROM properties");
+        $properties = Property::all();
 
         return view('property.index')->with('properties',$properties);
 
@@ -18,7 +19,7 @@ class PropertyController extends Controller
 
     public function show($name)
     {
-        $properties = DB::select("SELECT * FROM properties WHERE name = ?", [$name]);
+        $properties = Property::where('name', $name)->get();
 
         if(!empty($properties)){
             return view('property.show')->with('properties',$properties);
@@ -37,7 +38,6 @@ class PropertyController extends Controller
 
     public function store(Request $request)
     {
-
         $propertySlug = $this->setName($request->title);
 
         $property = [
@@ -55,10 +55,52 @@ class PropertyController extends Controller
 
     }
 
-    private function setName($title){
+    public function edit($name)
+    {
+        $properties = Property::where('name', $name)->get();
+
+        if(!empty($properties)){
+            return view('property.edit')->with('properties',$properties);
+        } else {
+            return redirect()->action('App\Http\Controllers\PropertyController@index');
+        }
+
+    }
+
+    public function update(Request $request, $id)
+    {
+        $propertySlug = $this->setName($request->title);
+
+        $property = [
+            $request->title,
+            $propertySlug,
+            $request->description,
+            $request->rental_price,
+            $request->sale_price,
+            $id
+        ];
+
+        DB::update("UPDATE properties set title = ?, name = ?, description = ?, rental_price = ?, sale_price = ? WHERE id = ?", $property);
+        return redirect()->action('App\Http\Controllers\PropertyController@index');
+
+    }
+
+    public function destroy($name)
+    {
+        $properties = Property::where('name', $name)->get();
+
+        if(!empty($properties)) {
+            DB::delete("DELETE FROM properties WHERE name = ?", [$name]);
+        }
+        return redirect()->action('App\Http\Controllers\PropertyController@index');
+
+    }
+
+    private function setName($title)
+    {
         $propertySlug = str_slug($title);
 
-        $properties = DB::select("SELECT * FROM properties");
+        $properties = Property::all();
 
         $t = 0;
         foreach ($properties as $property){
@@ -73,6 +115,5 @@ class PropertyController extends Controller
 
         return $propertySlug;
     }
-
 
 }
