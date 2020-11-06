@@ -11,7 +11,7 @@ class Property extends Model
 
     protected $table = 'properties';
 
-    protected $fillable = [];
+    protected $fillable = ['title','name','description','rental_price','sale_price'];
 
     public $timestamps = false;
 

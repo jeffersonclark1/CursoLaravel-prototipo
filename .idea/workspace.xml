@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cf3ac11-6a9f-4044-aad0-8694be08c16e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/prototipo/resources/views/property/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototipo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prototipo/app/Http/Controllers/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/app/Http/Controllers/PropertyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototipo/resources/views/property/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/resources/views/property/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototipo/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototipo/app/Models/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/prototipo/app/Models/Property.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +182,7 @@
       <workItem from="1604606183141" duration="24000" />
       <workItem from="1604606222464" duration="2927000" />
       <workItem from="1604664717186" duration="7246000" />
-      <workItem from="1604685440280" duration="306000" />
+      <workItem from="1604685440280" duration="617000" />
     </task>
     <servers />
   </component>

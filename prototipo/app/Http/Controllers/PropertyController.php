@@ -41,15 +41,14 @@ class PropertyController extends Controller
         $propertySlug = $this->setName($request->title);
 
         $property = [
-            $request->title,
-            $propertySlug,
-            $request->description,
-            $request->rental_price,
-            $request->sale_price
+            'title'=>$request->title,
+            'name'=>$propertySlug,
+            'description'=>$request->description,
+            'rental_price'=>$request->rental_price,
+            'sale_price'=>$request->sale_price
         ];
 
-        DB::insert("INSERT INTO properties (title,name,description,rental_price,sale_price) VALUES
-                        (?,?,?,?,?)", $property);
+        Property::create($property);
 
         return redirect()->action('App\Http\Controllers\PropertyController@index');
 
@@ -71,16 +70,16 @@ class PropertyController extends Controller
     {
         $propertySlug = $this->setName($request->title);
 
-        $property = [
-            $request->title,
-            $propertySlug,
-            $request->description,
-            $request->rental_price,
-            $request->sale_price,
-            $id
-        ];
+        $property = Property::find($id);
 
-        DB::update("UPDATE properties set title = ?, name = ?, description = ?, rental_price = ?, sale_price = ? WHERE id = ?", $property);
+        $property->title = $request->title;
+        $property->name = $propertySlug;
+        $property->description = $request->description;
+        $property->rental_price = $request->rental_price;
+        $property->sale_price = $request->sale_price;
+
+        $property->save();
+
         return redirect()->action('App\Http\Controllers\PropertyController@index');
 
     }
