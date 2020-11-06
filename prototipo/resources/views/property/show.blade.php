@@ -1,3 +1,7 @@
+@extends('property.master')
+@section('content')
+
+<div class="container my-3">
 <h1>Pagina Single</h1>
 
 <?php
@@ -14,4 +18,6 @@ if(!empty($properties)){
         <?php
     }
 }
-
+?>
+</div>
+@endsection
