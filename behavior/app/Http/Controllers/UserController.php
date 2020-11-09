@@ -24,9 +24,21 @@ class UserController extends Controller
 
     public function testPut(Request $request)
     {
-
         echo "Usuario da edicao é o codigo 1";
 
         return "<h1>Disparou a acao de PUT</h1>";
+    }
+
+    public function testPatch(Request $request)
+    {
+        echo "Usuario da edicao é o codigo 1";
+
+        return "<h1>Disparou a acao de PATCH</h1>";
+    }
+
+    public function testMatch(Request $request)
+    {
+        echo "<h1>Disparou a acao de PUT/PATCH</h1>";
+        echo "Usuario da edicao é o codigo 1";
     }
 }

@@ -25,3 +25,7 @@ Route::get('/getData', 'LaraDev\Http\Controllers\UserController@getData');
 Route::post('/postData', 'LaraDev\Http\Controllers\UserController@postData');
 
 Route::put('/users/1', 'LaraDev\Http\Controllers\UserController@testPut');
+
+Route::patch('/users/1', 'LaraDev\Http\Controllers\UserController@testPatch');
+
+Route::match(['put', 'patch'], '/users/2', 'LaraDev\Http\Controllers\UserController@testMatch');
