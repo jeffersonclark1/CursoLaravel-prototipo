@@ -18,3 +18,10 @@ Route::get('/', function () {
 });
 
 Route::view('/form', 'form');
+
+Route::get('/users/{id}', 'LaraDev\Http\Controllers\UserController@index');
+Route::get('/getData', 'LaraDev\Http\Controllers\UserController@getData');
+
+Route::post('/postData', 'LaraDev\Http\Controllers\UserController@postData');
+
+Route::put('/users/1', 'LaraDev\Http\Controllers\UserController@testPut');
