@@ -39,4 +39,23 @@ Route::resourceVerbs([
 //
 //Route::any('/users', 'LaraDev\Http\Controllers\UserController@any');
 
-Route::resource('posts', 'LaraDev\Http\Controllers\PostController');
+//Route::resource('posts', 'LaraDev\Http\Controllers\PostController');
+//
+//Route::get('/users', function (){
+//    echo "Listagem dos usuarios";
+//});
+//
+//Route::view('/form', 'form');
+//
+//Route::fallback(function (){
+//    echo "Oooops! Seja bem vindo a nossa pagina 404.";
+//});
+//
+//Route::redirect('/users/add','/form',301);
+//
+//Route::get('/posts', 'LaraDev\Http\Controllers\PostController@index')->name('post.index');
+//Route::get('/posts/index', 'LaraDev\Http\Controllers\PostController@indexRedirect')->name('post.redirect');
+
+Route::get('/users/{id}/comments/{comment?}', function ($id, $comment = null){
+    var_dump($id, $comment);
+})->where('id','[0-9]+');
