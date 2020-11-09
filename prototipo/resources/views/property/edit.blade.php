@@ -4,6 +4,7 @@
 <h1>Editar imoveis</h1>
 
 <?php
+    /** @var TYPE_NAME $properties */
     $property = $properties[0];
 
 ?>
