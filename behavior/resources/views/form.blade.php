@@ -13,9 +13,11 @@
 <body>
 
     <div class="container my-5">
-        <form action="/users/2" method="post" autocomplete="off">
+        <form action="/users/1" method="post" autocomplete="off">
+
             @csrf
-            @method("PUT")
+            @method("DELETE")
+
             <div class="form-group">
                 <label for="fist_name">Primeiro Nome</label>
                 <input class="form-control" type="text" name="fist_name" id="fist_name" value="Jefferson">

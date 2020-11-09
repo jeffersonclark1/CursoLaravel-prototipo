@@ -41,4 +41,14 @@ class UserController extends Controller
         echo "<h1>Disparou a acao de PUT/PATCH</h1>";
         echo "Usuario da edicao é o codigo 1";
     }
+
+    public function destroy()
+    {
+        return "<h1>Disparou a acao de DELETE 1</h1>";
+    }
+
+    public function any()
+    {
+        return "<h1>Qualquer verbalizacao é aceita</h1>";
+    }
 }

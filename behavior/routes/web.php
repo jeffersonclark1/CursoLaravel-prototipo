@@ -29,3 +29,7 @@ Route::put('/users/1', 'LaraDev\Http\Controllers\UserController@testPut');
 Route::patch('/users/1', 'LaraDev\Http\Controllers\UserController@testPatch');
 
 Route::match(['put', 'patch'], '/users/2', 'LaraDev\Http\Controllers\UserController@testMatch');
+
+Route::delete('/users/1', 'LaraDev\Http\Controllers\UserController@destroy');
+
+Route::any('/users', 'LaraDev\Http\Controllers\UserController@any');
