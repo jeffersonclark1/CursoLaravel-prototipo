@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53219665-19bd-4912-84ea-90254f61fd55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_09_11_2020_12_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +32,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -157,11 +159,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -171,7 +180,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604931187763</updated>
-      <workItem from="1604931189059" duration="4650000" />
+      <workItem from="1604931189059" duration="5506000" />
+      <workItem from="1604953699301" duration="1214000" />
     </task>
     <servers />
   </component>
@@ -188,24 +198,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1604931304177">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1604938348018">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1604931304177" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1604931304176">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1604938348018" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1604938348017">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1604931304176" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1604931304176">
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1604938348017" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1604938348016">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1604931304176" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1604931304177">
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1604938348016" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1604938348017">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1604931304177" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1604938348017" />
     <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1604931902606">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
