@@ -51,4 +51,10 @@ class UserController extends Controller
     {
         return "<h1>Qualquer verbalizacao é aceita</h1>";
     }
+
+    public function userComments($id, $comment = null)
+    {
+        return "<h1>Controle de dados</h1>" . $id . ' - ' . $comment;
+        var_dump($id, $comment);
+    }
 }

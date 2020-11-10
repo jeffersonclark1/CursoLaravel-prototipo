@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resourceVerbs([
-    'create'=>'cadastro',
-    'edit'=>'editar'
-]);
+//Route::resourceVerbs([
+//    'create'=>'cadastro',
+//    'edit'=>'editar'
+//]);
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -56,6 +56,25 @@ Route::resourceVerbs([
 //Route::get('/posts', 'LaraDev\Http\Controllers\PostController@index')->name('post.index');
 //Route::get('/posts/index', 'LaraDev\Http\Controllers\PostController@indexRedirect')->name('post.redirect');
 
-Route::get('/users/{id}/comments/{comment?}', function ($id, $comment = null){
-    var_dump($id, $comment);
-})->where('id','[0-9]+');
+//Route::get('/users/{id}/comments/{comment?}', function ($id, $comment = null){
+//    var_dump($id, $comment);
+//})->where('id','[0-9]+');
+
+//Route::get('/users/{id}/comments/{comment?}', 'LaraDev\Http\Controllers\UserController@userComments')->where('id','[0-9]+');
+
+Route::prefix('admin')->group(function (){
+    Route::view('/form','form');
+});
+
+Route::name('posts.')->group(function(){
+    Route::get('/admin/posts/index','LaraDev\Http\Controllers\PostController@index')->name('index');
+    Route::get('/admin/posts','LaraDev\Http\Controllers\PostController@show')->name('show');
+});
+
+Route::middleware(['throttle:10,1'])->group(function (){
+    Route::view('/form','form');
+});
+
+//Route::namespace('Admin')->group(function (){
+//    Route::get('/users','LaraDev\Http\Controllers\Admin\UserController@index');
+//});
