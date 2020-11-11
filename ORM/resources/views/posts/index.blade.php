@@ -28,6 +28,13 @@
                     <p>
                         <a class="btn btn-primary" href="{{ route('posts.edit' , ['id'=>$post->id]) }}"> Editar</a>
                     </p>
+                    <form action="{{ route('posts.destroy' , ['id'=>$post->id]) }}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <p>
+                            <button class="btn btn-danger">Excluir</button>
+                        </p>
+                    </form>
                 </article>
                 <hr>
                     <?php
