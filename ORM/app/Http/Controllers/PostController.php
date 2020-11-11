@@ -78,6 +78,8 @@ class PostController extends Controller
             'description'=>$request->description
         ]);
 
+        return redirect()->route('posts.index');
+
     }
 
     /**
@@ -99,7 +101,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        return view('posts.edit',compact('post'));
     }
 
     /**
@@ -111,7 +113,12 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $post->title = $request->title;
+        $post->subtitle = $request->subtitle;
+        $post->description = $request->description;
+        $post->update();
+
+        return redirect()->route('posts.index');
     }
 
     /**
