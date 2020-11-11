@@ -7,6 +7,36 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
+    public function forceDelete($post)
+    {
+        $post = Post::onlyTrashed()->find($post);
+
+        if($post->trashed()){
+            $post->forceDelete();
+        }
+
+        return redirect()->route('posts.index');
+
+    }
+
+    public function restore($post)
+    {
+        $post = Post::onlyTrashed()->find($post);
+
+        if($post->trashed()){
+            $post->restore();
+        }
+
+        return redirect()->route('posts.index');
+
+    }
+
+    public function trashed()
+    {
+        $posts = Post::onlyTrashed()->get();
+        return view('posts.trashed', compact('posts'));
+    }
     /**
      * Display a listing of the resource.
      *
@@ -133,4 +163,6 @@ class PostController extends Controller
 
         return redirect()->route('posts.index');
     }
+
+
 }
