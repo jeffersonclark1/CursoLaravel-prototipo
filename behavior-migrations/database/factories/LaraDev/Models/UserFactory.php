@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\LaraDev\Models;
 
 use LaraDev\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;

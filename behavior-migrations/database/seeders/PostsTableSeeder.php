@@ -3,17 +3,17 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use LaraDev\Models\Post;
 
-class DatabaseSeeder extends Seeder
+class PostsTableSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        $this->call(PostsTableSeeder::class);
-
+        Post::factory()->count(1)->create();
     }
 }
