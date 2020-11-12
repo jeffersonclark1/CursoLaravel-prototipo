@@ -20,42 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1556cdd-60d9-4c0a-bd6b-b19cfd0bd24a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ORM-Avancado.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_12_11_2020_10_54.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/PostCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/AddressFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CommentFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/PostCategoryFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_10_31_171954_create_posts_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_10_31_200016_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_10_31_204341_create_post_category_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_11_15_113446_create_addresses_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_11_15_154448_create_comments_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_11_15_172724_add_level_on_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/AddressTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CategoryTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CommentTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/PostCategoryTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/PostTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ORM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ORM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ORM/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../ORM/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605189076506</updated>
-      <workItem from="1605189078155" duration="589000" />
+      <workItem from="1605189078155" duration="2757000" />
     </task>
     <servers />
   </component>
@@ -236,5 +204,9 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605189102973" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1605190293227">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1605190293227" />
   </component>
 </project>
