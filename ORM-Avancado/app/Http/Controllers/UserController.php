@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Address;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -60,6 +61,29 @@ class UserController extends Controller
             echo "Complemento:  {$userAddress->complement} , {$userAddress->zipcode}<br>";
             echo "Cidade : {$userAddress->city} , {$userAddress->state} <br>";
         }
+
+//        $addressTeste = new Address([
+//            'address' => 'Rua California',
+//            'number' => '1002',
+//            'complement' => '123',
+//            'zipcode' => '9999-33',
+//            'city' => 'Caracas',
+//            'state' => 'SP'
+//        ]);
+
+//        $address = new Address();
+//        $address->address = 'Rua Kansas';
+//        $address->number = '22';
+//        $address->complement = 'Pq. Florida';
+//        $address->zipcode = '00000-222';
+//        $address->city = 'Bayeux';
+//        $address->state = 'PB';
+//
+//        $user->addressDelivery()->save($address);
+//        $user->addressDelivery()->saveMany([$addressTeste, $address]);
+
+        $users = User::with('addressDelivery')->get();
+        dd($users);
 
     }
 
