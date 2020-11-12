@@ -13,6 +13,7 @@
 
 Route::resource('users','UserController');
 Route::resource('addreses','AddressController');
+Route::resource('posts','PostController');
 
 Route::get('/', function () {
     return view('welcome');
