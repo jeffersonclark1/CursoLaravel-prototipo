@@ -28,7 +28,7 @@ class PostController extends Controller
             $post->restore();
         }
 
-        return redirect()->route('posts.index');
+        return redirect()->route('posts.trashed');
 
     }
 
