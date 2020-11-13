@@ -37,6 +37,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    protected $visible = ['name','email','admin'];
+
+    protected $appends = ['admin'];
+
     public function addressDelivery()
     {
         return $this->hasOne(Address::class,'user','id');
@@ -70,6 +74,11 @@ class User extends Authenticatable
     public function getFullNameAttribute()
     {
         return $this->name . "(" . $this->remember_token . ")";
+    }
+
+    public function getAdminAttribute()
+    {
+        return ($this->attributes['level'] > 5 ? true : false );
     }
 
 }
