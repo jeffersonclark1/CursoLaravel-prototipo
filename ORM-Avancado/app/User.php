@@ -67,4 +67,9 @@ class User extends Authenticatable
         return $query->where('level','>',5);
     }
 
+    public function getFullNameAttribute()
+    {
+        return $this->name . "(" . $this->remember_token . ")";
+    }
+
 }

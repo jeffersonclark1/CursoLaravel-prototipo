@@ -47,13 +47,18 @@ class PostController extends Controller
     public function show($id)
     {
         $posts = Post::find($id);
+        $usersPosts = $posts->author()->get()->first();
+        $fullName = $posts->author()->get()->first()->fullName;
 
         echo "<h1>Artigos</h1><br>";
         echo "Titulo : {$posts->title} <br>";
         echo "Subtitle:  {$posts->subtitle}<br>";
-        echo "Description : {$posts->description} <br><hr>";
+        echo "Description : {$posts->description} <br>";
+        echo "Created : {$posts->createdBR} <br><hr>";
+        echo "Teste : {$fullName} ";
 
-        $usersPosts = $posts->author()->get()->first();
+//        $posts->title = 'Titulo de teste do meu artigo!';
+//        $posts->save();
 
         if($usersPosts){
             echo "<h1>Dados do usuario</h1><br>";
@@ -75,9 +80,9 @@ class PostController extends Controller
 //        $posts->categories()->sync([5,10]);
 //        $posts->categories()->syncWithoutDetaching([5,6,7]);
 
-        $posts->comments()->create([
-            'content' => 'Teste de comentario 123999'
-        ]);
+//        $posts->comments()->create([
+//            'content' => 'Teste de comentario 123999'
+//        ]);
 
         $comments = $posts->comments()->get();
 
