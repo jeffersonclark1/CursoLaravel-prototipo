@@ -68,7 +68,24 @@ class PostController extends Controller
             foreach ($categories as $category) {
                 echo "#{$category->id} Categoria {$category->name} <br>";
             }
+        }
 
+//        $posts->categories()->attach([3]);
+//        $posts->categories()->detach([3]);
+//        $posts->categories()->sync([5,10]);
+//        $posts->categories()->syncWithoutDetaching([5,6,7]);
+
+        $posts->comments()->create([
+            'content' => 'Teste de comentario 123999'
+        ]);
+
+        $comments = $posts->comments()->get();
+
+        if($comments){
+            echo "<h1>Dados da comentarios</h1><br>";
+            foreach ($comments as $comment) {
+                echo "#{$comment->id} Categoria {$comment->content} <br>";
+            }
         }
 
     }
