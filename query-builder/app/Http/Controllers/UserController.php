@@ -39,14 +39,30 @@ class UserController extends Controller
 //            sleep(1);
 //        });
 
-        $users = DB::table('users')
+//        $users = DB::table('users')
 //            ->whereIn('users.status',[0,1])
-            ->whereNotIn('users.status',[0,1])
-            ->whereNotNull('users.name')
+//            ->whereNotIn('users.status',[0,1])
+//            ->whereNotNull('users.name')
+//            ->get();
+//
+//        foreach ($users as $user) {
+//            echo "#{$user->id} Nome : {$user->name} Status : {$user->status} <br>";
+//        }
+
+        $users = DB::table('users')
+            ->select('users.id','users.name','users.status','addresses.address')
+//            ->leftjoin('addresses','users.id','=','addresses.user')
+            ->join('addresses',function ($join){
+                    $join->on('users.id','=','addresses.user')
+                        ->where('addresses.status','=',1);
+            })
+            ->orderBy('users.id','asc')
             ->get();
 
+        echo "Total de registros {$users->count()}<br>";
+
         foreach ($users as $user) {
-            echo "#{$user->id} Nome : {$user->name} Status : {$user->status} <br>";
+            echo "#{$user->id} Nome : {$user->name} Status : {$user->status} {$user->address} <br>";
         }
 
     }
