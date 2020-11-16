@@ -20,16 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1556cdd-60d9-4c0a-bd6b-b19cfd0bd24a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../query-builder/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -164,7 +163,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605189076506</updated>
-      <workItem from="1605189078155" duration="13537000" />
+      <workItem from="1605189078155" duration="14849000" />
+      <workItem from="1605538938565" duration="50000" />
+      <workItem from="1605539462878" duration="9000" />
     </task>
     <servers />
   </component>
@@ -181,28 +182,29 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="769" y="432" width="444" height="249" key="#Composer" timestamp="1605189262382">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="769" y="432" width="444" height="249" key="#Composer/72.27.1848.1053@72.27.1848.1053" timestamp="1605189262382" />
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1605189102975">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1605293976418">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605189102975" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1605189102972">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605293976418" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1605293976417">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605189102972" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1605189102969">
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605293976417" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1605293976417">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605189102969" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1605189102973">
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605293976417" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1605293976417">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605189102973" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605293976417" />
     <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1605278764810">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
